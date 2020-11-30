@@ -1,6 +1,6 @@
 {
   "name": "lebeben",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A barebones CLI for building/serving jsx apps",
   "main": "cli.mjs",
   "bin": {

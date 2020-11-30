@@ -14,6 +14,7 @@ import { gray, red, green, yellow, cyan } from "colorette";
 const cliArgs = [
   {
     long: "watch",
+    default: [],
     type: "string[]",
     description: "one or many directories to watch for changes",
   },
