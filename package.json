@@ -1,13 +1,14 @@
 {
   "name": "lebeben",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A barebones CLI for building/serving jsx apps",
   "main": "cli.mjs",
   "bin": {
     "lebeben": "bin/lebeben.js"
   },
   "scripts": {
-    "build": "esbuild cli.mjs --bundle --platform=node --minify --format=cjs --external:chokidar --external:esbuild --outfile=bin/lebeben.js"
+    "build": "esbuild cli.mjs --bundle --platform=node --minify --format=cjs --external:chokidar --external:esbuild --outfile=bin/lebeben.js",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "bin/lebeben.js"
