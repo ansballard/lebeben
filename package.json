@@ -1,0 +1,27 @@
+{
+  "name": "lebeben",
+  "version": "0.1.0",
+  "description": "A barebones CLI for building/serving jsx apps",
+  "main": "cli.mjs",
+  "bin": {
+    "lebeben": "bin/lebeben.js"
+  },
+  "scripts": {
+    "build": "esbuild cli.mjs --bundle --platform=node --minify --format=cjs --external:chokidar --external:esbuild --outfile=bin/lebeben.js"
+  },
+  "files": [
+    "bin/lebeben.js"
+  ],
+  "keywords": [],
+  "author": "Aaron Ballard (ans.ballard@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.4.3",
+    "esbuild": "^0.8.16"
+  },
+  "devDependencies": {
+    "colorette": "^1.2.1",
+    "mri": "^1.1.6",
+    "serve-handler": "^6.1.3"
+  }
+}
